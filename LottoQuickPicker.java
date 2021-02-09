@@ -54,7 +54,7 @@ public class LottoQuickPicker {
 	} // END UNIQUENUMARRAY
 	
 	/** Helper Method
-	 * 
+	 * Generates a 1-D array with unique numbers from 1 - selection pool size.
 	 * @return A 1-D array with unique numbers.
 	 */
 	private static int[] generateUniqueArray () {
@@ -94,7 +94,8 @@ public class LottoQuickPicker {
 	
 	
 /** 
- * 
+ * Initializes a private class 2D array variable with 
+ * the proper number of "quick-pick" lotto games.
  * @param games An integer that is the number of games that will be generated.
  */
 	private void init(int games) {
