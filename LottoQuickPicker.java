@@ -13,7 +13,7 @@ public class LottoQuickPicker {
 
 	// constants specific to current game - BUT NOT ALL GAMES
 	public final static int DEFAULT_GAME_COUNT = 1;
-	private static int GAME_COUNT = 1;
+	public static int GAME_COUNT = 1;
 	private final static String GAME_NAME = "LOTTO";
 	private final static int SELECTION_POOL_SIZE = 59;
 	private final static int SELECTION_COUNT = 6;
@@ -41,7 +41,7 @@ public class LottoQuickPicker {
 	 * 
 	 * @return A 2-D array that has unique numbers for each of its rows.
 	 */
-	public int[][] uniqueNumArray() {
+	private int[][] uniqueNumArray() {
 		int[][] uniqueArray = new int[GAME_COUNT][SELECTION_COUNT];
 
 		for (int i = 0; i < GAME_COUNT; i++)
